@@ -26,9 +26,9 @@ mkdir -p exercises/exercice_1/solutions/your_name/{js,python,c}
 replacing `your_name` with your actual name.
 Create files for each problem you solve in the appropriate language sub-directory (e.g., `js`, `python`, `c`). For example:
 ```bash
-touch exercises/exercice_1/solutions/your_name/js/{problem_1.js,problem_2.js,problem_3.js}
-touch exercises/exercice_1/solutions/your_name/python/{problem_1.py,problem_2.py,problem_3.py}
-touch exercises/exercice_1/solutions/your_name/c/{problem_1.c,problem_2.c,problem_3.c}
+touch exercices/exercice_1/solutions/your_name/js/{problem_1.js,problem_2.js,problem_3.js}
+touch exercices/exercice_1/solutions/your_name/python/{problem_1.py,problem_2.py,problem_3.py}
+touch exercices/exercice_1/solutions/your_name/c/{problem_1.c,problem_2.c,problem_3.c}
 ```
 
 You can then add your solution files inside this directory.
