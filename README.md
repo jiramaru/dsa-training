@@ -21,7 +21,7 @@ git checkout -b your_name
 ## Create a sub-directory for your solutions
 To keep your solutions organized, create a sub-directory named after your GitHub username inside the relevant problem category folder. For example:
 ```bash
-mkdir -p exercises/exercice_1/solutions/your_name/{js,python,c}
+mkdir -p exercices/exercice_1/solutions/your_name/{js,python,c}
 ```
 replacing `your_name` with your actual name.
 Create files for each problem you solve in the appropriate language sub-directory (e.g., `js`, `python`, `c`). For example:
