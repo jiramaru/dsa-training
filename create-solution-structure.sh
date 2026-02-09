@@ -3,12 +3,12 @@
 # Script to create directory structure for DSA solutions
 # Usage: bash create-solution-structure.sh <student_name> [language1 language2 ...]
 # Supported languages: python, js, c, cpp, java, go, rust, dart, php, csharp, ts
-# Default languages (if none specified): python, js, c, cpp
+# Default language (if none specified): python
 
 if [ -z "$1" ]; then
     echo "Usage: bash create-solution-structure.sh <student_name> [language1 language2 ...]"
     echo ""
-    echo "Example with default languages (python, js, c, cpp):"
+    echo "Example with default language (python only):"
     echo "  bash create-solution-structure.sh deo-bata"
     echo ""
     echo "Example with specific languages:"
@@ -24,9 +24,9 @@ shift  # Remove first argument, remaining are languages
 # Supported languages
 SUPPORTED_LANGUAGES=("python" "js" "c" "cpp" "java" "go" "rust" "dart" "php" "csharp" "ts")
 
-# Default languages if none specified
+# Default language if none specified
 if [ $# -eq 0 ]; then
-    LANGUAGES=("python" "js" "c" "cpp")
+    LANGUAGES=("python")
 else
     LANGUAGES=("$@")
 fi

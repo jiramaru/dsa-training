@@ -28,8 +28,8 @@ To keep your solutions organized, we provide a shell script that automatically c
 ### Using the Shell Script (Recommended)
 Use the provided `create-solution-structure.sh` script to automatically create the directory structure. Run it with bash:
 
-#### Default Languages
-If you don't specify any languages, the script creates directories for Python, JavaScript, C, and C++:
+#### Default Language
+If you don't specify any languages, the script creates directory for Python only:
 
 ```bash
 bash create-solution-structure.sh your_name
