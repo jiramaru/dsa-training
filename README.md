@@ -23,26 +23,86 @@ git checkout -b your_name
 ```
 
 ## Create a sub-directory for your solutions
-To keep your solutions organized, create a sub-directory named after your GitHub username inside the `solutions/` folder. For each problem you solve, create a structure by problem and language. For example:
+To keep your solutions organized, we provide a shell script that automatically creates the directory structure for you.
+
+### Using the Shell Script (Recommended)
+Use the provided `create-solution-structure.sh` script to automatically create the directory structure. Run it with bash:
+
+#### Default Languages
+If you don't specify any languages, the script creates directories for Python, JavaScript, C, and C++:
+
 ```bash
-mkdir -p solutions/your_name/p-01-conditions/{python,js,c}
-mkdir -p solutions/your_name/p-02-arrays/{python,cpp}
-mkdir -p solutions/your_name/p-03-strings/{python,js}
-```
-For example, if your GitHub username is `deo-bata`:
-```bash
-mkdir -p solutions/deo-bata/p-01-conditions/{python,js,c}
-mkdir -p solutions/deo-bata/p-02-arrays/{python,cpp}
-mkdir -p solutions/deo-bata/p-03-strings/{python,js}
+bash create-solution-structure.sh your_name
 ```
 
-Create files for each problem you solve in the appropriate language sub-directory (e.g., `python/`, `js/`, `c/`, `cpp/`). For example:
+Example:
 ```bash
-touch solutions/deo-bata/p-01-conditions/python/solution-01.py
-touch solutions/deo-bata/p-01-conditions/js/solution-01.js
-touch solutions/deo-bata/p-02-arrays/python/solution-02.py
-touch solutions/deo-bata/p-03-strings/python/solution-03.py
+bash create-solution-structure.sh deo-bata
 ```
+
+#### Custom Languages
+You can specify which programming languages you want to use. Supported languages are:
+- `python` - Python
+- `js` - JavaScript
+- `c` - C
+- `cpp` - C++
+- `java` - Java
+- `go` - Go
+- `rust` - Rust
+- `dart` - Dart
+
+To create directories for specific languages:
+
+```bash
+bash create-solution-structure.sh your_name python js
+```
+
+Example with multiple languages:
+```bash
+bash create-solution-structure.sh deo-bata python cpp java
+```
+
+**Note:** Make sure you're in the repository root directory when running the script. The script will validate that you enter correct language names.
+
+This will automatically create the complete directory structure for your chosen programming languages across all problem categories (p-00 through p-05).
+
+### Manual Directory Creation
+If you prefer to create directories manually, create a sub-directory named after your GitHub username inside the `solutions/` folder and organize by language first, then by problem category:
+
+```bash
+mkdir -p solutions/your_name/python/{p-00-general,p-01-conditions,p-02-arrays,p-03-strings,p-04-loops,p-05-functions}
+mkdir -p solutions/your_name/js/{p-01-conditions,p-02-arrays,p-03-strings,p-04-loops,p-05-functions}
+mkdir -p solutions/your_name/c/{p-01-conditions,p-02-arrays,p-03-strings,p-04-loops,p-05-functions}
+```
+
+Your final directory structure should look like:
+```
+solutions/
+└── deo-bata/
+    ├── python/
+    │   ├── p-00-general/
+    │   │   └── solution-00.py
+    │   ├── p-01-conditions/
+    │   │   ├── solution-01.py
+    │   │   └── solution-02.py
+    │   ├── p-02-arrays/
+    │   │   └── solution-01.py
+    │   ├── p-03-strings/
+    │   │   └── solution-01.py
+    │   ├── p-04-loops/
+    │   │   └── solution-04.py
+    │   └── p-05-functions/
+    │       ├── solution-01.py
+    │       └── solution-05.py
+    ├── js/
+    │   └── p-01-conditions/
+    │       └── solution-01.js
+    └── c/
+        └── p-01-conditions/
+            └── solution-01.c
+```
+
+After creating the structure, add your solution files for each problem you solve.
 
 You can then add your solution files inside this directory.
 
