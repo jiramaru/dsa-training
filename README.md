@@ -2,43 +2,54 @@
 This repository contains a collection of Data Structures and Algorithms (DSA) problems designed to help you enhance your coding skills. Whether you're a beginner or an experienced programmer, practicing these problems will improve your problem-solving abilities and prepare you for technical interviews.
 
 ## Getting Started
-To get started, simply clone this repository to your local machine:
+To get started, fork this repository on GitHub, then clone your fork to your local machine:
 ```bash
-git clone https://github.com/jiramaru/algo_training.git
+git clone https://github.com/your_username/dsa-training.git
 ```
 Navigate to the project directory:
 ```bash
-cd algo_training
+cd dsa-training
 ```
 You can then explore the various problem categories and start solving them using your preferred programming language.
 
 ## Create a Branch for Your Solutions
-To keep your contributions organized, create a new branch for your solutions. Use the following command, replacing `your_name` with your actual name:
+To keep your contributions organized, create a new branch for your solutions. Use the following command, replacing `your_name` with your actual name (e.g., `deo-bata`):
 ```bash
 git checkout -b your_name
+# Example: git checkout -b deo-bata
 ```
 
 ## Create a sub-directory for your solutions
-To keep your solutions organized, create a sub-directory named after your GitHub username inside the relevant problem category folder. For example:
+To keep your solutions organized, create a sub-directory named after your GitHub username inside the `solutions/` folder. For each problem you solve, create a structure by problem and language. For example:
 ```bash
-mkdir -p exercices/exercice_1/solutions/your_name/{js,python,c}
+mkdir -p solutions/your_name/p-01-conditions/{python,js,c}
+mkdir -p solutions/your_name/p-02-arrays/{python,cpp}
+mkdir -p solutions/your_name/p-03-strings/{python,js}
 ```
-replacing `your_name` with your actual name.
-Create files for each problem you solve in the appropriate language sub-directory (e.g., `js`, `python`, `c`). For example:
+For example, if your GitHub username is `deo-bata`:
 ```bash
-touch exercices/exercice_1/solutions/your_name/js/{problem_1.js,problem_2.js,problem_3.js}
-touch exercices/exercice_1/solutions/your_name/python/{problem_1.py,problem_2.py,problem_3.py}
-touch exercices/exercice_1/solutions/your_name/c/{problem_1.c,problem_2.c,problem_3.c}
+mkdir -p solutions/deo-bata/p-01-conditions/{python,js,c}
+mkdir -p solutions/deo-bata/p-02-arrays/{python,cpp}
+mkdir -p solutions/deo-bata/p-03-strings/{python,js}
+```
+
+Create files for each problem you solve in the appropriate language sub-directory (e.g., `python/`, `js/`, `c/`, `cpp/`). For example:
+```bash
+touch solutions/deo-bata/p-01-conditions/python/solution-01.py
+touch solutions/deo-bata/p-01-conditions/js/solution-01.js
+touch solutions/deo-bata/p-02-arrays/python/solution-02.py
+touch solutions/deo-bata/p-03-strings/python/solution-03.py
 ```
 
 You can then add your solution files inside this directory.
 
 ## Pushing Your Changes
-After adding your solutions, you can push your changes to your forked repository:
+After adding your solutions, commit and push your changes to your forked repository:
 ```bash
 git add .
-git commit -m "Add solutions for exercise_1 by your_name"
+git commit -m "Add solutions for p-01-conditions by your_name"
 git push origin your_name
+# Example: git push origin deo-bata
 ```
 
 -----------
